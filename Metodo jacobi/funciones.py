@@ -194,7 +194,7 @@ def jacobi(arr):
         ##ese ciclo ejecuta las iteraciones, mientras la tolerencia
         #siga siendo mayor que cualquiera de los erroes relativos porcentual de
         #cada variable
-        while tol<erp1 and tol<erp2 and tol<erp3:
+        while (erp1<tol and erp2<tol and erp3<tol)==False:
             n+=1
             ##efectuamos este if solo en la primera iteración
             #que inicia con x1=Ca/Aii, x2=Cb/bii ,x3=Cc/cii, calculados en la funcción

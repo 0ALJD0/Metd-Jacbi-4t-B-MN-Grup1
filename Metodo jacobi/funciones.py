@@ -202,9 +202,9 @@ def jacobi(arr):
                 vrbls0=processcon0(arr) ##se obtiene el array x1,x2,x3
                 a=1.0##se activa la vandera
                 #se efectua el calculo    
-                x1=(vca+(vya*vrbls0[1])+(vza*vrbls0[2]))/vxa 
-                x2=(vcb+(vxb*vrbls0[0])+(vzb*vrbls0[2]))/vyb 
-                x3=(vcc+(vxc*vrbls0[0])+(vyc*vrbls0[1]))/vzc 
+                x1=(vca+((vya*-1)*vrbls0[1])+((vza*-1)*vrbls0[2]))/vxa 
+                x2=(vcb+((vxb*-1)*vrbls0[0])+((vzb*-1)*vrbls0[2]))/vyb 
+                x3=(vcc+((vxc*-1)*vrbls0[0])+((vyc*-1)*vrbls0[1]))/vzc 
                 #se realiza el calculo del error relativo porcentual
                 erp1=erpt(x1,vrbls0[0])
                 erp2=erpt(x2,vrbls0[1])

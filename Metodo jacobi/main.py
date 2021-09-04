@@ -13,21 +13,22 @@ print("Muy buenas, somos el primer grupo, conformado por: \n"
 ##después del mensaje de bienvenida
 while a=="S": 
     ##Validar sí desea corregir los datos, reptirá la inserción de datos
-    while c=="S": 
-      ##pedimos el ingreso de datos, tanto de los valores del sistema
-      ##como de la tolerancia
-      b=menu()
-      mostrararry(b)
-      ##Mostramos 
-      print("Desea corregir los datos?")
-      print("Ingrese S si así es o N si no ")
-      c=validarentrasn()
+    
+  while c=="S": 
+        ##pedimos el ingreso de datos, tanto de los valores del sistema
+        ##como de la tolerancia
+        b=menu()
+        mostrararry(b)
+        ##Mostramos 
+        print("Desea corregir los datos?")
+        print("Ingrese S si así es o N si no ")
+        c=validarentrasn()
 
-    ##Ejecutamos el algritmo  de jacobi  
-    jacobi(b)
-    print("Desea volver a ejecutar el programa?")
-    print("Ingrese S si así es o N = no (cierre del programa) ")
-    a=validarentrasn()
+        ##Ejecutamos el algritmo  de jacobi  
+        jacobi(b)  
+  print("Desea volver a ejecutar el programa?")
+  print("Ingrese S si así es o N = no (cierre del programa) ")
+  a=validarentrasn()
 
 print("Adios! Buen día")
 
